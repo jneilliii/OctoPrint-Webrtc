@@ -277,7 +277,7 @@ $(function() {
 
         self.onEventSettingsUpdated = function (payload) {
             // the webcam url might have changed, make sure we replace it now if the tab is focused
-            self._enableWebcam();
+            self.control._enableWebcam();
             self.requestData();
         };
 
@@ -717,9 +717,9 @@ $(function() {
 
         self.onBrowserTabVisibilityChange = function (status) {
             if (status) {
-                self._enableWebcam();
+                self.control._enableWebcam();
             } else {
-                self._disableWebcam();
+                self.control._disableWebcam();
             }
         };
 
