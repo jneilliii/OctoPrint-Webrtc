@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_webrtc/templates *
+recursive-include octoprint_webrtc/translations *
+recursive-include octoprint_webrtc/static *
